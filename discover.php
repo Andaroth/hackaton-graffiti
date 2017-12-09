@@ -3,7 +3,7 @@
   include("./php/models/config.php");
   include(C."session.php");
 
-  $page = "artist";
+  $page = "discover";
 ?>
 <!--
 	Helios by HTML5 UP

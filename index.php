@@ -2,6 +2,8 @@
 <?php
   include("./php/models/config.php");
   include(C."session.php");
+
+  $page = "home";
 ?>
 <!--
 	Helios by HTML5 UP
@@ -13,18 +15,20 @@
 	<body class="homepage">
 		<div id="page-wrapper">
 
-			<?php include(V."header.php"); ?>
+			<?php
+        include(V."header.php"); 
+			
+		    include(V."main.php"); 
+			
+		    /*include(V."banner.php"); 
 
-			<?php include(V."banner.php"); ?>
+		    include(V."carousel.php"); 
 
-			<?php include(V."carousel.php"); ?>
+		    include(V."features.php"); */
 
-			<?php include(V."main.php"); ?>
-
-			<?php include(V."features.php"); ?>
-
-			<?php include(V."footer.php"); ?>
-				
+		    include(V."footer.php"); 
+      
+      ?>
 
 		</div>
 
