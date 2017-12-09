@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
   include("./php/models/config.php");
+  include(C."session.php");
 ?>
 <!--
 	Helios by HTML5 UP
