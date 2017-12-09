@@ -2,7 +2,7 @@
       <div id="header">
 
         <!-- Inner -->
-          <div class="inner">
+          <div class="inner" id="homeinner">
             <header>
               <h1><a href="index.html" id="logo"><?= $site["title"] ?></a></h1>
               <hr />
@@ -14,7 +14,11 @@
             
           </div>
           <div class="bgvideo">
-              
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nwYyM39vSX8?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <!--<video width="100%" height="100%">
+              <source src="https://vimeo.com/88829079" type="video/mp4">
+              Your browser does not support the video tag.
+            </video> -->
           </div>
 
         <!-- Nav -->
@@ -37,9 +41,6 @@
                   <li><a href="#">Envoyez vos photos</a></li>
                 </ul>
               </li>
-              <!--<li><a href="left-sidebar.html">Left Sidebar</a></li>
-              <li><a href="right-sidebar.html">Right Sidebar</a></li>
-              <li><a href="no-sidebar.html">No Sidebar</a></li>-->
             </ul>
           </nav>
 
