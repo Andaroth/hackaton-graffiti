@@ -7,7 +7,8 @@
   $bdd = ""; 
   
   $site = array(
-    "title" =>  "Hackaton Babel"
+    "title"       =>  "Babel Graffiti",
+    "description" =>  "Le site du projet graffiti du Hackaton Babel"
   );
 
   define("M", "./php/models/");
