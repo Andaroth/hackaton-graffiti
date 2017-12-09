@@ -2,42 +2,45 @@
       <div id="header">
 
         <!-- Inner -->
-          <div class="inner">
+          <div class="inner" id="homeinner">
             <header>
-              <h1><a href="index.html" id="logo">Babel Graffiti</a></h1>
-              <!--<hr />
-              <p>Another fine freebie by HTML5 UP</p>-->
+              <h1><a href="index.html" id="logo"><?= $site["title"] ?></a></h1>
+              <hr />
+              <p><?= $site["description"] ?></p>
             </header>
             <footer>
               <a href="#banner" class="button circled scrolly">À propos</a>
             </footer>
+            
+          </div>
+          <div class="bgvideo">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nwYyM39vSX8?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <!--<video width="100%" height="100%">
+              <source src="https://vimeo.com/88829079" type="video/mp4">
+              Your browser does not support the video tag.
+            </video> -->
           </div>
 
         <!-- Nav -->
           <nav id="nav">
             <ul>
-              <li><a href="index.html">Accueil</a></li>
+              <li><a href="./index.php">Accueil</a></li>
               <li>
-                <a href="#">Dropdown</a>
+                L'art en rue
                 <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Magna phasellus</a></li>
-                  <li><a href="#">Etiam dolore nisl</a></li>
-                  <li>
-                    <a href="#">And a submenu &hellip;</a>
-                    <ul>
-                      <li><a href="#">Lorem ipsum dolor</a></li>
-                      <li><a href="#">Phasellus consequat</a></li>
-                      <li><a href="#">Magna phasellus</a></li>
-                      <li><a href="#">Etiam dolore nisl</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Veroeros feugiat</a></li>
+                  <li><a href="#">Les parcours</a></li>
+                  <li><a href="#">Galerie photos</a></li>
+                  <li><a href="#">Nos vidéos et métrages</a></li>
                 </ul>
               </li>
-              <!--<li><a href="left-sidebar.html">Left Sidebar</a></li>
-              <li><a href="right-sidebar.html">Right Sidebar</a></li>
-              <li><a href="no-sidebar.html">No Sidebar</a></li>-->
+              <li><a href="./">Les artistes</a></li>
+              <li>
+                Vos découvertes
+                <ul>
+                  <li><a href="#">Découvrez la galerie</a></li>
+                  <li><a href="#">Envoyez vos photos</a></li>
+                </ul>
+              </li>
             </ul>
           </nav>
 

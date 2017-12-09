@@ -112,9 +112,9 @@
 								<!-- Contact -->
 									<section class="contact">
 										<header>
-											<h3>Nisl turpis nascetur interdum?</h3>
+											<h3>Envie de vous tenir au courant ?</h3>
 										</header>
-										<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+										<p>Rejoignez la communauté en nous suivant sur les réseaux sociaux. Ne ratez plus la moindre actualité !</p>
 										<ul class="icons">
 											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
