@@ -5,34 +5,36 @@
           <div class="inner">
             <header>
               <h1><a href="index.html" id="logo"><?= $site["title"] ?></a></h1>
-              <!--<hr />
-              <p>Another fine freebie by HTML5 UP</p>-->
+              <hr />
+              <p><?= $site["description"] ?></p>
             </header>
             <footer>
               <a href="#banner" class="button circled scrolly">À propos</a>
             </footer>
+            
+          </div>
+          <div class="bgvideo">
+              
           </div>
 
         <!-- Nav -->
           <nav id="nav">
             <ul>
-              <li><a href="index.html">Accueil</a></li>
+              <li><a href="./index.php">Accueil</a></li>
               <li>
-                <a href="#">Dropdown</a>
+                L'art en rue
                 <ul>
-                  <li><a href="#">Lorem ipsum dolor</a></li>
-                  <li><a href="#">Magna phasellus</a></li>
-                  <li><a href="#">Etiam dolore nisl</a></li>
-                  <li>
-                    <a href="#">And a submenu &hellip;</a>
-                    <ul>
-                      <li><a href="#">Lorem ipsum dolor</a></li>
-                      <li><a href="#">Phasellus consequat</a></li>
-                      <li><a href="#">Magna phasellus</a></li>
-                      <li><a href="#">Etiam dolore nisl</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Veroeros feugiat</a></li>
+                  <li><a href="#">Les parcours</a></li>
+                  <li><a href="#">Galerie photos</a></li>
+                  <li><a href="#">Nos vidéos et métrages</a></li>
+                </ul>
+              </li>
+              <li><a href="./">Les artistes</a></li>
+              <li>
+                Vos découvertes
+                <ul>
+                  <li><a href="#">Découvrez la galerie</a></li>
+                  <li><a href="#">Envoyez vos photos</a></li>
                 </ul>
               </li>
               <!--<li><a href="left-sidebar.html">Left Sidebar</a></li>

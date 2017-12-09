@@ -1,0 +1,24 @@
+.bgvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -10;
+  background-color: blue;
+}
+
+#nav {
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
+  padding: 10px 0;
+}
+
+#header {
+  background-image: none;
+}
+
+#page-wrapper > section,
+#page-wrapper > div {
+  z-index: 100;
+}
