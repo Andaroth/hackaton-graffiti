@@ -4,7 +4,7 @@
         <!-- Inner -->
           <div class="inner">
             <header>
-              <h1><a href="index.html" id="logo">Babel Graffiti</a></h1>
+              <h1><a href="index.html" id="logo"><?= $site["title"] ?></a></h1>
               <!--<hr />
               <p>Another fine freebie by HTML5 UP</p>-->
             </header>
