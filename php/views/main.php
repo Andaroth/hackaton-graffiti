@@ -1,5 +1,6 @@
 <!-- Main -->
   <div id="map"></div>
+  <div id="getmap"></div>
 	<script>
 
 
@@ -49,7 +50,7 @@
 
 			// Create markers.
 			function modal(feature){
-				document.write('<div class="remodal" data-remodal-id='+feature.id+'><button data-remodal-action="close" class="remodal-close"></button><h1>'+feature.name+'</h1><p>'+feature.descritpion+'</p><img style="width:100;" src='+feature.url+'" alt=""><button data-remodal-action="cancel" class="remodal-cancel">Cancel</button><button data-remodal-action="confirm" class="remodal-confirm">OK</button></div>')
+				document.querySelector("#getmap").innerHTML = '<div class="remodal" data-remodal-id='+feature.id+'><button data-remodal-action="close" class="remodal-close"></button><h1>'+feature.name+'</h1><p>'+feature.descritpion+'</p><img style="width:100;" src='+feature.url+'" alt=""><button data-remodal-action="cancel" class="remodal-cancel">Cancel</button><button data-remodal-action="confirm" class="remodal-confirm">OK</button></div>';
 			}
 			features.forEach(function(feature) {
 
