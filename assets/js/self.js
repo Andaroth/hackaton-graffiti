@@ -11,26 +11,21 @@ $(document).ready(function(){
   }); // resize end
   
   // on scroll
-  $(window).scroll(function() {
+  /*$(window).scroll(function() {
     $scrollTop = $(document).scrollTop();
     $viewHeight = $(window).height();
     console.log("top:"+$scrollTop+"px");
     // topbar
-    if ($scrollTop == 0) {
-      $("#nav").addClass("tophide");
-      $("#homeinner").removeClass("forceshow");
-      $("#homeinner").css("display","hidden");
-    } else {
-      $("#nav").removeClass("tophide");
-      $("#homeinner").addClass("forceshow");
-      $("#homeinner").css("display","inline-block");
+    if ($("#map").length) {
+      if ($scrollTop >= $viewHeight) {
+        $("#nav").addClass("tophide");
+      } else {
+        $("#nav").removeClass("tophide");
+      }
     }
-    // bg video
-    if ($scrollTop >= (($viewHeight/3)*2)) {
-      $(".bgvideo").addClass("nopacity");
-    } else {
-      $(".bgvideo").removeClass("nopacity");
-    } 
   }); // scroll end
+  $("#visitbtn").click(function() {
+    $("#nav").addClass("tophide");
+  });*/
   
 });

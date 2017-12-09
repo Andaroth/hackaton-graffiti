@@ -1,3 +1,7 @@
+body {
+  background-image: url("../../images/header.jpg");
+}
+
 .bgvideo {
   position: fixed;
   top: 0;
@@ -5,7 +9,7 @@
   height: 100vh;
   width: 100%;
   z-index: -10;
-  transition: opacity 1s ease;
+  transition: opacity 2s ease;
   background-image: url("../../images/header.jpg");
 }
 
@@ -14,7 +18,7 @@
   padding: 20px 0;
   z-index: 110;
   background-color: rgba(0,0,0,.7);
-  transition: all .25s ease-in-out;
+  transition: all .5s ease;
 }
 
 #header {
@@ -46,12 +50,27 @@ div.footer {
   background-color: #2b252c;
 }
 
+#map {
+  height: 100vh;
+}
+
+
+.nohome {
+  max-height: 50vh !important;
+  min-height: 0 !important;
+}
 .nopacity {
   opacity: 0;
+}
+.topfix {
+  position: fixed !important;
 }
 .tophide {
   transform: translateY(-100px);
 }
 .forceshow {
   opacity: 1 !important;
+}
+.forcehide {
+  display: hidden !important;
 }
