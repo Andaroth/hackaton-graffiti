@@ -1,28 +1,5 @@
 <!-- Main -->
-
-<html>
-<head>
-	<title>Custom Markers</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<meta charset="utf-8">
-	<style>
-		/* Always set the map height explicitly to define the size of the div
-		 * element that contains the map. */
-		#map {
-			height: 100%;
-		}
-		/* Optional: Makes the sample page fill the window. */
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		}
-	</style>
-	<link rel="stylesheet" href="../../assets/css/remodal-default-theme.css"/>
-	<link rel="stylesheet" href="../../assets/css/remodal.css"/>
-</head>
-<body>
-	<div id="map"></div>
+  <div id="map"></div>
 	<script>
 
 
@@ -34,7 +11,7 @@
 				mapTypeId: 'roadmap'
 			});
 
-			var iconBase = '../../images/ico/';
+			var iconBase = 'images/ico/';
 			var icons = {
 				graff: {
 					icon: iconBase+'paint.png'
@@ -95,8 +72,6 @@
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt_zMT2EJuzj0cUnHZ_BHX7DqB9RTU2n8&callback=initMap">
 	</script>
 	<!-- <script src="../../assets/js/remodal.js"></script> -->
-</body>
-</html>
 
 
 

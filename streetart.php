@@ -3,7 +3,7 @@
   include("./php/models/config.php");
   include(C."session.php");
 
-  $page = "artist";
+  $page = "streetart";
 ?>
 <!--
 	Helios by HTML5 UP
@@ -17,15 +17,7 @@
 
 			<?php include(V."header.php"); ?>
 
-			<!-- Banner -->
-				<section id="banner">
-					<header>
-						<h2>Bienvenue sur <strong><?= $site["title"] ?></strong></h2>
-						<p>
-							
-						</p>
-					</header>
-				</section>
+			
 
 			<?php include(V."footer.php"); ?>
 				
