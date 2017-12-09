@@ -49,6 +49,12 @@ div.wrapper {
 div.footer {
   background-color: #2b252c;
 }
+
+#map {
+  height: 100vh;
+}
+
+
 .nohome {
   max-height: 50vh !important;
   min-height: 0 !important;

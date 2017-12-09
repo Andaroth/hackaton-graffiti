@@ -17,7 +17,15 @@
 
 			<?php include(V."header.php"); ?>
 
-			
+			<!-- Banner -->
+				<section id="banner">
+					<header>
+						<h2>Bienvenue sur <strong><?= $site["title"] ?></strong></h2>
+						<p>
+							
+						</p>
+					</header>
+				</section>
 
 			<?php include(V."footer.php"); ?>
 				
