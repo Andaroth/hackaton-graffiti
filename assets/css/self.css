@@ -1,0 +1,57 @@
+.bgvideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -10;
+  transition: opacity 1s ease;
+  background-image: url("../../images/header.jpg");
+}
+
+#nav {
+  position: fixed;
+  padding: 20px 0;
+  z-index: 110;
+  background-color: rgba(0,0,0,.7);
+  transition: all .25s ease-in-out;
+}
+
+#header {
+  background-image: none;
+  height: 95vh;
+}
+#header #homeinner {
+  opacity: 0;
+  transition: .2s ease;
+}
+#header:hover #homeinner {
+  opacity: 1;
+}
+
+#page-wrapper > section,
+#page-wrapper > div.wrapper {
+  z-index: 100;
+}
+#banner {
+  background-color: white;
+}
+section.carousel {
+  background-color: lightgrey;
+}
+div.wrapper {
+  background-color: white;
+}
+div.footer {
+  background-color: #2b252c;
+}
+
+.nopacity {
+  opacity: 0;
+}
+.tophide {
+  transform: translateY(-100px);
+}
+.forceshow {
+  opacity: 1 !important;
+}

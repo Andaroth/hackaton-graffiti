@@ -8,7 +8,7 @@
   
   $site = array(
     "title"       =>  "Babel Graffiti",
-    "description" =>  "Le site du projet graffiti du Hackaton Babel"
+    "description" =>  "Le site du projet street-art du Hackaton Babel"
   );
 
   define("M", "./php/models/");
