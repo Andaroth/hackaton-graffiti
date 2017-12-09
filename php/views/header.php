@@ -12,24 +12,29 @@
               <p><?= $site["description"] ?></p>
             </header>
             <footer>
-              <a href="#map" class="button circled scrolly">Découvrez</a>
+              <a id="visitbtn" href="#map" class="button circled scrolly">Découvrez</a>
             </footer>
             <?php break;
-            
+            // Page "Artiste"
             case "artist": ?>
             <header>
               <h1>Artiste</h1>
             </header>
-            <?php break; case "streetart": ?>
+            <?php break; 
+            // Page "Street art"
+            case "streetart": ?>
             <header>
               <h1>L'art de rue</h1>
             </header>
             <?php break; 
+            // page "Vos découvertes"
             case "discover": ?>
             <header>
               <h1>Découvrir</h1>
             </header>
-            <?php break; default: ?>
+            <?php break; 
+            // Autres
+            default: ?>
             <header>
               <h1>Page</h1>
             </header>

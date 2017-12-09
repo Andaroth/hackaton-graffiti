@@ -11,7 +11,7 @@ $(document).ready(function(){
   }); // resize end
   
   // on scroll
-  $(window).scroll(function() {
+  /*$(window).scroll(function() {
     $scrollTop = $(document).scrollTop();
     $viewHeight = $(window).height();
     console.log("top:"+$scrollTop+"px");
@@ -24,5 +24,8 @@ $(document).ready(function(){
       }
     }
   }); // scroll end
+  $("#visitbtn").click(function() {
+    $("#nav").addClass("tophide");
+  });*/
   
 });
