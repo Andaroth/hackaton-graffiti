@@ -1,4 +1,7 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<?php
+  include("./php/models/config.php");
+?>
 <!--
 	Helios by HTML5 UP
 	html5up.net | @ajlkn
@@ -6,7 +9,7 @@
 -->
 <html>
 	<head>
-		<title>Helios by HTML5 UP</title>
+		<title>Hackaton Babel Graffiti</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -23,19 +26,19 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.html" id="logo">Helios</a></h1>
-								<hr />
-								<p>Another fine freebie by HTML5 UP</p>
+								<h1><a href="index.html" id="logo">Babel Graffiti</a></h1>
+								<!--<hr />
+								<p>Another fine freebie by HTML5 UP</p>-->
 							</header>
 							<footer>
-								<a href="#banner" class="button circled scrolly">Start</a>
+								<a href="#banner" class="button circled scrolly">À propos</a>
 							</footer>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html">Accueil</a></li>
 								<li>
 									<a href="#">Dropdown</a>
 									<ul>
@@ -54,9 +57,9 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Left Sidebar</a></li>
+								<!--<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
+								<li><a href="no-sidebar.html">No Sidebar</a></li>-->
 							</ul>
 						</nav>
 
