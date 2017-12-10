@@ -39,6 +39,6 @@ FROM photos');
 
 $photo= new photo();
 $data=$photo->getAllImage();
-var_dump($data);
+// var_dump($data);
 
  ?>

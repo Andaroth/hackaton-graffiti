@@ -70,6 +70,7 @@ div.footer {
   padding: 40px;
   box-sizing: border-box;
   text-align: center;
+  overflow: scroll;
 }
 
 #getmap div.remodal > div button {
@@ -78,8 +79,9 @@ div.footer {
 
 #getmap img {
   display: block;
-  width: 70%;
+  max-width: 70%;
   margin: 20px auto;
+  max-height: 33vh;
 }
 
 #carousel #grider {

@@ -1,4 +1,8 @@
-<!-- Main -->
+
+ <?php  ?>
+
+ 
+ <!-- Main -->
   <div id="map"></div>
   <div id="getmap"></div>
 	<script>
@@ -26,32 +30,64 @@
 				{
 					position: new google.maps.LatLng(50.845409, 4.350503),
 					type: 'bd',
-					name:'tintin',
-					url:'./uploads/lechat.jpg',
-					descritpion:'Photo de tintin',
+					name:'Tintin Escaler',
+					url:'./uploads/Tintin.jpg',
+					descritpion:'Dans le centre, vous êtes sûrement déjà passé devant une fresque de Tintin. Connu dans les quatre coins du monde, le détective belge s’installe sur les murs de la capitale. Cette peinture murale est en fait une vignette de L’affaire Tournesol qui date de 1955.',
 					id:'1'
 
-				}, {
-					position: new google.maps.LatLng(50.846520, 4.350350),
+				},{
+					position: new google.maps.LatLng(50.837738, 4.342003),
 					type: 'bd',
-					name:'le passage',
-					url:'./uploads/lechat.jpg',
-					descritpion:'sur ma root',
-					id:'2'
-				}, {
-					position: new google.maps.LatLng(50.847814, 4.361705),
-					type: 'bd',
-					name:'ta maman',
-					url:'./uploads/lechat.jpg',
-					descritpion:'Mais ta maman kwa',
+					name:'Le chat',
+					url:'	./uploads/lechat.jpg',
+					descritpion:'Fresque de Gelucke',
 					id:'3'
+				},
+        {
+					position: new google.maps.LatLng(50.825017, 4.281840),
+					type: 'graff',
+					name:'Dzia, la Baleine',
+					url:'./uploads/balaine dezia_resto.jpg',
+					descritpion:'Si vous voyez des lignes abstraites et géométriques qui parcourent le corps d’un animal, c’est que Dzia Krank est passé par là. Des fresques animalières très colorées envahissent les rues de Bruxelles. Outre ses talents d’artiste, il est également le fondateur du magazine Krank qui met en avant les street-artist.',
+					id:'4'
 				}
 			];
+      
+      /*<?php 
 
+      /*for ($i==0;$i<$data.length();$i++) {
+        echo $data[$i]['lat'];
+      }*/
+      /*$i=0;
+      $len=count($data);
+        echo"var features=[";
+      forEach($data as $champImage){
+      $lat = floatval($champImage['lat']);
+        $long = floatval($champImage['long']);
+      echo "{
+					position: new google.maps.LatLng(".$lat.",".$long."),
+					type: ".$champImage['type'].",
+					name:".$champImage['title'].",
+					url:".$champImage['url'].",
+					descritpion:".$champImage['description'].",
+					id:".$champImage['id']."
+
+				}";
+        if($i!=$len-1){
+          echo",";
+          
+        }
+        $i++;
+        
+  
+      }; 
+        echo"];";*/
+      ?>
+      */
 
 			// Create markers.
 			function modal(feature){
-				document.querySelector("#getmap").innerHTML = '<div class="remodal" data-remodal-id='+feature.id+'><div><button id="remodalclose" data-remodal-action="close" onclick="closeElem();">&times;</button><h1>'+feature.name+'</h1><p>'+feature.descritpion+'</p><img style="width:100;" src="'+feature.url+'" alt=""><button data-remodal-action="cancel" class="remodal-cancel">Cancel</button><button data-remodal-action="confirm" class="remodal-confirm">OK</button></div></div>';
+				document.querySelector("#getmap").innerHTML = '<div class="remodal" data-remodal-id='+feature.id+'><div><button id="remodalclose" data-remodal-action="close" onclick="closeElem();">&times;</button><h1>'+feature.name+'</h1><p>'+feature.descritpion+'</p><img id="previewimg" style="width:100;" src="'+feature.url+'" alt=""><button data-remodal-action="cancel" class="remodal-cancel">Cancel</button><button data-remodal-action="confirm" class="remodal-confirm">OK</button></div></div>';
 			}
 
 			features.forEach(function(feature) {
@@ -67,7 +103,7 @@
 
 
 
-
+        
 		});
 	}
 	</script>
