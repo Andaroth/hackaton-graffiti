@@ -53,7 +53,13 @@
         <!-- Nav -->
           <nav id="nav">
             <ul>
-              <li><a href="./index.php">Accueil</a></li>
+              <li>
+                <a href="./index.php">Accueil</a>
+                <ul>
+                  <li><a href="./index.php#map">La carte</a></li>
+                  <li><a href="#">Faire une recherche</a></li>
+                </ul>
+              </li>
               <li>
                 <a href="./streetart.php">L'art en rue</a>
                 <ul>
