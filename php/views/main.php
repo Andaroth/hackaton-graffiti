@@ -48,10 +48,12 @@
 				}
 			];
 
+
 			// Create markers.
 			function modal(feature){
 				document.querySelector("#getmap").innerHTML = '<div class="remodal" data-remodal-id='+feature.id+'><div><button id="remodalclose" data-remodal-action="close" onclick="closeElem();">&times;</button><h1>'+feature.name+'</h1><p>'+feature.descritpion+'</p><img style="width:100;" src="'+feature.url+'" alt=""><button data-remodal-action="cancel" class="remodal-cancel">Cancel</button><button data-remodal-action="confirm" class="remodal-confirm">OK</button></div></div>';
 			}
+
 			features.forEach(function(feature) {
 
 
