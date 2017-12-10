@@ -1,5 +1,18 @@
 <head>
-		<title><?= $site["title"] ?></title>
+    <?php
+      switch($page) {
+        case "artist":
+          $pagetitle = " - Les artistes";
+          break;
+        case "streetart":
+            $pagetitle = " - Les rues de Bruxelles";
+          break;
+        default:
+          $pagetitle = "";
+          break;
+      }
+    ?>
+		<title><?= $site["title"].$pagetitle ?></title>
 		<meta name="description" content="<?= $site["description"] ?>">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />

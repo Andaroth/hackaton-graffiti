@@ -82,6 +82,20 @@ div.footer {
   margin: 20px auto;
 }
 
+#carousel #grider {
+  display: block;
+  width: 620px;
+  margin: 0 auto;
+}
+#carousel #grider > article {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#carousel #grider > article:nth-child(2n) {
+  margin-right: 0;
+}
+
 .nohome {
   max-height: 50vh !important;
   min-height: 0 !important;

@@ -17,10 +17,12 @@
 
 			<?php
         include(V."header.php"); 
-			
+      
+		    include(V."banner.php"); 
+      
 		    include(V."main.php"); 
 			
-		    /*include(V."banner.php"); 
+		    /* 
 
 		    include(V."carousel.php"); 
 
