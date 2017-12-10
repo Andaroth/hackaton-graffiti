@@ -25,9 +25,9 @@ class photo
   // }
 
   public function getAllImage()
-  {$req=$this->db->query('SELECT*
-FROM photos
-FOR JSON AUTO ');
+  {
+    $req= $this->db->query('SELECT *
+FROM photos');
     $resultat=$req->fetchAll();
     return $resultat;
   }
@@ -38,7 +38,7 @@ FOR JSON AUTO ');
 }
 
 $photo= new photo();
-$data=$photo->getAllImage();
-console.log($data);
+$data=json_encode($photo->getAllImage());
+echo($data);
 
  ?>

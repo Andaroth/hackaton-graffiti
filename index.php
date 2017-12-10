@@ -17,7 +17,13 @@
 		<div id="page-wrapper">
 
 			<?php
-        include(V."header.php");
+        include(V."header.php"); 
+      
+		    include(V."banner.php"); 
+      
+		    include(V."main.php"); 
+			
+		    /* 
 
 		    include(V."main.php");
 

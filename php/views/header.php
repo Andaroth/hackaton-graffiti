@@ -53,22 +53,28 @@
         <!-- Nav -->
           <nav id="nav">
             <ul>
-              <li><a href="./index.php">Accueil</a></li>
+              <li>
+                <a href="./index.php">Accueil</a>
+                <ul>
+                  <li><a href="./index.php#map">La carte</a></li>
+                  <li><a href="#">Faire une recherche</a></li>
+                </ul>
+              </li>
               <li>
                 <a href="./streetart.php">L'art en rue</a>
                 <ul>
-                  <li><a href="./streetart.php#sprint">Les parcours</a></li>
-                  <li><a href="./streetart.php#slider">Galerie photos</a></li>
-                  <li><a href="./streetart.php#videos">Nos vidéos et métrages</a></li>
+                  <li><a href="./streetart.php#">Les parcours</a></li>
+                  <li><a href="./streetart.php#galerie">Galerie photos</a></li>
+                  <!--<li><a href="./streetart.php#videos">Nos vidéos et métrages</a></li>-->
                 </ul>
               </li>
               <li><a href="./artist.php">Les artistes</a></li>
               <li>
                 <a href="./discover.php">Vos découvertes</a>
-                <ul>
+                <!--<ul>
                   <li><a href="./discover.php#slider">Découvrez la galerie</a></li>
                   <li><a href="./discover.php#send">Envoyez vos photos</a></li>
-                </ul>
+                </ul>-->
               </li>
             </ul>
           </nav>

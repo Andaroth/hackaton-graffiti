@@ -1,3 +1,8 @@
+function closeElem(){
+  document.querySelector("#getmap").removeChild(document.querySelector(".remodal"));
+  console.log("closelem");
+}
+
 $(document).ready(function(){
   // at start
   console.log("child js ok");
@@ -9,6 +14,10 @@ $(document).ready(function(){
     $viewHeight = $(window).height();
     console.log("height:"+$viewHeight+"px");
   }); // resize end
+  
+  /*$("#remodalclose").on("click",function() {
+   console.log("hello"); document.querySelector("#getmap").removeChild(document.querySelector(".remodal"));
+  });*/
   
   // on scroll
   /*$(window).scroll(function() {

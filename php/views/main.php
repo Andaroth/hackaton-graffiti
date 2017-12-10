@@ -27,31 +27,31 @@
 					position: new google.maps.LatLng(50.845409, 4.350503),
 					type: 'bd',
 					name:'tintin',
-					url:'vdsdvd',
-					descritpion:'sfdvs',
+					url:'./uploads/lechat.jpg',
+					descritpion:'Photo de tintin',
 					id:'1'
 
 				}, {
 					position: new google.maps.LatLng(50.846520, 4.350350),
 					type: 'bd',
 					name:'le passage',
-					url:'sdfs',
-					descritpion:'sfds',
-					id:'Z'
+					url:'./uploads/lechat.jpg',
+					descritpion:'sur ma root',
+					id:'2'
 				}, {
 					position: new google.maps.LatLng(50.847814, 4.361705),
 					type: 'bd',
 					name:'ta maman',
-					url:'sdvcswd',
-					descritpion:'sds',
-					id:'sdvs'
+					url:'./uploads/lechat.jpg',
+					descritpion:'Mais ta maman kwa',
+					id:'3'
 				}
 			];
 
 
 			// Create markers.
 			function modal(feature){
-				document.querySelector("#getmap").innerHTML = '<div class="remodal" data-remodal-id='+feature.type+'><div><button data-remodal-action="close" class="remodal-close"></button><h1>'+feature.name+'</h1><p>'+feature.descritpion+'</p><img style="width:100;" src='+feature.url+'" alt=""><button data-remodal-action="cancel" class="remodal-cancel">Cancel</button><button data-remodal-action="confirm" class="remodal-confirm">OK</button></div></div>';
+				document.querySelector("#getmap").innerHTML = '<div class="remodal" data-remodal-id='+feature.id+'><div><button id="remodalclose" data-remodal-action="close" onclick="closeElem();">&times;</button><h1>'+feature.name+'</h1><p>'+feature.descritpion+'</p><img style="width:100;" src="'+feature.url+'" alt=""><button data-remodal-action="cancel" class="remodal-cancel">Cancel</button><button data-remodal-action="confirm" class="remodal-confirm">OK</button></div></div>';
 			}
 
 			features.forEach(function(feature) {

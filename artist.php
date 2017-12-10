@@ -17,7 +17,7 @@
 
 			<?php include(V."header.php"); ?>
 
-			<!-- Banner -->
+			<!-- Banner 
 				<section id="banner">
 					<header>
 						<h2>Bienvenue sur <strong><?= $site["title"] ?></strong></h2>
@@ -25,10 +25,63 @@
 							
 						</p>
 					</header>
-				</section>
-
-			<?php include(V."footer.php"); ?>
+				</section>-->
 				
+				<!-- Features -->
+				<div class="wrapper style1">
+
+					<section id="features" class="container special">
+						<header>
+							<h2>Morbi ullamcorper et varius leo lacus</h2>
+							<p>Ipsum volutpat consectetur orci metus consequat imperdiet duis integer semper magna.</p>
+						</header>
+						<div class="row">
+							<article class="4u 12u(mobile) special">
+								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+								<header>
+									<h3><a href="#">Gravida aliquam penatibus</a></h3>
+								</header>
+							</article>
+							<article class="4u 12u(mobile) special">
+								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+								<header>
+									<h3><a href="#">Gravida aliquam penatibus</a></h3>
+								</header>
+							</article>
+							<article class="4u 12u(mobile) special">
+								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+								<header>
+									<h3><a href="#">Gravida aliquam penatibus</a></h3>
+								</header>
+							</article>
+							<article class="4u 12u(mobile) special">
+								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+								<header>
+									<h3><a href="#">Gravida aliquam penatibus</a></h3>
+								</header>
+							</article>
+							<article class="4u 12u(mobile) special">
+								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+								<header>
+									<h3><a href="#">Gravida aliquam penatibus</a></h3>
+								</header>
+							</article>
+							<article class="4u 12u(mobile) special">
+								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+								<header>
+									<h3><a href="#">Gravida aliquam penatibus</a></h3>
+								</header>
+							</article>
+						</div>
+					</section>
+
+				</div>
+				
+				
+				<?php  
+
+          include(V."footer.php");
+        ?>
 
 		</div>
 
