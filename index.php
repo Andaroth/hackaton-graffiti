@@ -2,6 +2,7 @@
 <?php
   include("./php/models/config.php");
   include(C."session.php");
+  include("./php/models/image.php");
 
   $page = "home";
 ?>
@@ -17,17 +18,23 @@
 
 			<?php
         include(V."header.php"); 
-			
+      
+		    include(V."banner.php"); 
+      
 		    include(V."main.php"); 
 			
-		    /*include(V."banner.php"); 
+		    /* 
 
-		    include(V."carousel.php"); 
+		    include(V."main.php");
+
+		    /*include(V."banner.php");
+
+		    include(V."carousel.php");
 
 		    include(V."features.php"); */
 
-		    include(V."footer.php"); 
-      
+		    include(V."footer.php");
+
       ?>
 
 		</div>

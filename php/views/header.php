@@ -7,7 +7,7 @@
             
             case "home": ?>
             <header>
-              <h1><a href="index.html" id="logo"><?= $site["title"] ?></a></h1>
+              <h1><a href="index.php" id="logo"><?= $site["title"] ?></a></h1>
               <hr />
               <p><?= $site["description"] ?></p>
             </header>
@@ -42,33 +42,39 @@
           </div>
           <?php if ($page == "home") { ?>
           <div class="bgvideo">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nwYyM39vSX8?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;volume=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-            <!--<video width="100%" height="100%">
-              <source src="https://vimeo.com/88829079" type="video/mp4">
+            <!--<iframe width="100%" height="100%" src="https://www.youtube.com/embed/nwYyM39vSX8?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;volume=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
+            <video width="100%" height="100%" autoplay loop>
+              <source src="./assets/video/video_graff.mp4" type="video/mp4">
               Your browser does not support the video tag.
-            </video> -->
+            </video> 
           </div>
           <?php } ?>
 
         <!-- Nav -->
           <nav id="nav">
             <ul>
-              <li><a href="./index.php">Accueil</a></li>
+              <li>
+                <a href="./index.php">Accueil</a>
+                <ul>
+                  <li><a href="./index.php#map">La carte</a></li>
+                  <li><a href="#">Faire une recherche</a></li>
+                </ul>
+              </li>
               <li>
                 <a href="./streetart.php">L'art en rue</a>
                 <ul>
-                  <li><a href="./streetart.php#sprint">Les parcours</a></li>
-                  <li><a href="./streetart.php#slider">Galerie photos</a></li>
-                  <li><a href="./streetart.php#videos">Nos vidéos et métrages</a></li>
+                  <li><a href="./streetart.php#">Les parcours</a></li>
+                  <li><a href="./streetart.php#galerie">Galerie photos</a></li>
+                  <!--<li><a href="./streetart.php#videos">Nos vidéos et métrages</a></li>-->
                 </ul>
               </li>
               <li><a href="./artist.php">Les artistes</a></li>
               <li>
                 <a href="./discover.php">Vos découvertes</a>
-                <ul>
+                <!--<ul>
                   <li><a href="./discover.php#slider">Découvrez la galerie</a></li>
                   <li><a href="./discover.php#send">Envoyez vos photos</a></li>
-                </ul>
+                </ul>-->
               </li>
             </ul>
           </nav>
