@@ -28,7 +28,7 @@ class photo
   {
     $req= $this->db->query('SELECT *
 FROM photos');
-    $resultat=$req->fetchAll();
+    $resultat=$req->fetchObject();
     return $resultat;
   }
 
@@ -38,7 +38,7 @@ FROM photos');
 }
 
 $photo= new photo();
-$data=json_encode($photo->getAllImage());
-echo($data);
+$data=$photo->getAllImage();
+var_dump($data);
 
  ?>
