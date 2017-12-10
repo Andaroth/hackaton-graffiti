@@ -4,11 +4,13 @@
  */
 class photo
 {
-
+  
+  public $db;
   function __construct()
+
   {
     try {
-        $this->db = new PDO('pgsql:host='.$dbhost.';dbname='.$dbname.'', $dbuser, $dbpass);
+        $this->db = new PDO('pgsql:host=ec2-54-247-189-141.eu-west-1.compute.amazonaws.com;dbname=da7l266tpqiqfk', 'tksxvpcezdzhex', '0b8cca46d24c349a2e03accc721df09b41584e70b41fed0d24de03a6bd2d1137');
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (Exception $e) {
         die('Erreur :' . $e->getMessage());
@@ -22,10 +24,10 @@ class photo
   //
   // }
 
-  public function getAllImage($search='')
-  {
-    $search2='%'.$search.'%';
-    $req=$this->db->query("SELECT * FROM images WHERE description LIKE '$search2' ");
+  public function getAllImage()
+  {$req=$this->db->query('SELECT*
+FROM photos
+FOR JSON AUTO ');
     $resultat=$req->fetchAll();
     return $resultat;
   }
@@ -35,5 +37,8 @@ class photo
 
 }
 
+$photo= new photo();
+$data=$photo->getAllImage();
+console.log($data);
 
  ?>
