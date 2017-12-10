@@ -54,6 +54,33 @@ div.footer {
   height: 100vh;
 }
 
+#getmap div.remodal {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 50;
+  background: rgba(255,255,255,.9);
+}
+#getmap div.remodal > div {
+  display: block;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#getmap div.remodal > div button {
+  margin: 0 15px;
+}
+
+#getmap img {
+  display: block;
+  width: 70%;
+  margin: 20px auto;
+}
 
 .nohome {
   max-height: 50vh !important;
